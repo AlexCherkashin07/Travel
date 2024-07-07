@@ -1,0 +1,382 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic@display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/*Обнуление всех стилей на странице html*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+/*Меняет подсчет ширины блока, чтобы было удобнее верстать*/
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Убираем линии обводки у некоторых браузеров*/
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+/*Перечисляем некоторые HTML5 теги и добавляем им значение блок, что делает их блочными */
+nav,footer,header,aside{display: block;}
+/*Обратимся к тегам html и body и применим к ним параметры, которые уравнивают поведение шрифтов и элементов для разных браузеров*/
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/*Обращаемся к семействам тега font и просим наследовать шрифт семейства шрифта, потому что по умолчанию они не наследуют*/
+input,button,textarea{font-family: inherit;}
+/* Добавляем некоторые свойства, которые убирают некоторые особенности в различных браузерах (убирают отступы, чистят список)*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*Обнуляем все заголовки h1,h2,h3,h4,h5,h6*/
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/*-----------------------------------*/
+body{
+    font-family: 'Montserrat', regular;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: black;
+}
+.header{
+    background-color: white;
+    padding: 16px 0;
+}
+.container{
+    max-width: 1170px;
+    margin: 0  auto;
+    padding: 0 15px;
+.log-money{
+    position: relative;
+    right: -70px;
+}
+.log-language{
+    position: relative;
+    right: -40px;
+}
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
+.log{
+    display: flex;
+}
+
+.menu-item{
+    padding-right: 45px;
+}
+.menu-link{
+    font-size: 16px;
+    line-height: 25px;
+    color: black;
+}
+.card_travel{
+    margin-bottom: 100px;
+}
+.travel_card{
+    position: absolute;
+    max-width: 1170px;
+}
+.container-card{
+    position: relative;
+    top: 100px;
+    left: 15px;
+}
+.bold-card{
+    margin: 0;
+   font-size: 52px;
+   font-weight: 700;
+   line-height: 64px;
+}
+.medium-card{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 15px;
+}
+.reserv{
+    width: 570px;
+    height: 70px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0 0 10px #cccccc;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 260px auto;
+    text-align: center;
+    
+}
+.where_cont{
+  position: relative;
+  right: -30px;
+}
+.date_cont{
+    position: relative;
+     right: -30px;
+}
+.choose_us{
+    background-color: #f7f7f7;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.choose_us h1{
+    font-size: 36px;
+
+}
+.choose_text{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 20px;
+    
+}
+.choose_us{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 60px;
+}
+.ch_item img{
+    margin-bottom: 20px;
+}
+.ch_item h3{
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 10px;
+}
+.ch_item p{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px;
+}
+.offers{
+    max-width: 1170px;
+    margin: 0  auto;
+    padding: 0 15px;
+    padding-top: 107px;
+}
+.offers h1{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+}
+.offers_container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+.search_hotel{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: #EE685F;
+  
+}
+.block1{
+    width: 370px;
+    height: 360px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid rgb(204, 204, 204);
+    background-color: white;
+}
+/*Для плавного увеличения блока*/
+.block1:hover {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+.block1 img{
+    text-align: center;
+}
+.block1 h3{
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+.bedroom{
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(204, 204, 204);
+}
+.date{
+    font-size: 16px;
+    line-height: 20px;
+}
+.price{
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+    color: rgb(7, 156, 241);
+}
+.reviews{
+    max-width: 1170px;
+    margin: 0  auto;
+    padding: 0 15px;
+    margin-top: 130px;
+}
+.reviews h1{
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.gallery_reviews{
+    display: flex;
+    justify-content: space-around;
+}
+.review1{
+    height: 307px;
+    width: 301px;
+    border: 1px solid black;
+    padding: 10px auto;
+}
+.review1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+.review{
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: italic;
+}
+.author_review{
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: italic;
+}
+button{
+    padding: 25px;
+    height: 50px;
+    width: 275px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: #EE685F;
+    margin:50px auto;
+}
+.posts{
+    max-width: 1170px;
+    margin: 0  auto;
+    padding: 0 15px;
+    padding-top: 107px;
+    padding-bottom: 290px;
+}
+.posts h1{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+}
+.posts_container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    gap: 30px;
+}
+.block2{
+    width: 370px;
+    height: 410px;
+    border-radius: 20px;
+    background-color: white;
+}
+.date_posts{
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+}
+.block2 h3{
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.content_posts{
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+}
+footer{
+    background-color: #f7f7f7;
+}
+.footer_col ul{
+    list-style: none;
+}
+.footer_col h4{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.footer_col li{
+    margin-bottom: 20px;
+}
+.footer_col a{
+    color: grey;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid grey;
+}
+.footer_col_form h4{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.footer_col_form li{
+    margin-bottom: 20px;
+}
+.footer_col_form button{
+    margin: 0;
+    padding: 0;
+    width: 300px;
+   height: 40px; 
+}
+.text_email{
+   width: 300px;
+   height: 40px; 
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    padding-bottom: 16px;
+
+}
+.row2 ul li{
+    display: inline;
+    margin-right: 5px;
+}
+
